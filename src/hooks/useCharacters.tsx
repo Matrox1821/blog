@@ -11,7 +11,7 @@ export default function useCharacters() {
       import.meta.env.VITE_PUBLIC_KEY
   );
 
-  const apiUrl = `http://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${
+  const apiUrl = `https://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${
     import.meta.env.VITE_PUBLIC_KEY
   }&hash=${hash}`;
 
