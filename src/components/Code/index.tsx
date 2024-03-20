@@ -1,5 +1,10 @@
 import {PrismLight as SyntaxHighlighter} from "react-syntax-highlighter";
+import tsx from "react-syntax-highlighter/dist/esm/languages/prism/tsx";
+import typescript from "react-syntax-highlighter/dist/esm/languages/prism/typescript";
 import {oneDark} from "react-syntax-highlighter/dist/esm/styles/prism";
+
+SyntaxHighlighter.registerLanguage(typescript, "typescript");
+SyntaxHighlighter.registerLanguage(tsx, "tsx");
 
 export default function Code({
   children,

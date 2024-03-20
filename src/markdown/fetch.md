@@ -29,7 +29,7 @@ fetch(URL).then(res=>console.log(res.json()))
 
 - UseEffect and useState.
 
-<Code language="typescript" >
+<Code language="tsx" >
 //import hooks
 import {useEffect, useState} from "react";
 
